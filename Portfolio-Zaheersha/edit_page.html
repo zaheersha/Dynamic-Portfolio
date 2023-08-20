@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Edit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+        title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="images/img.png" style="width:45%;" class="w3-round"><br><br>
+      <h4><b>AKULA ZAHEER SHA</b></h4>
+      <p class="w3-text-grey"> Programmer || Front-End Developer || DSA || Researcher || Digital Marketing || IoT
+        Builder || DBMS || AWS || Curious Learner || Student at GPCET ||</p>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#abstract" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> Edit - About me </a>
+      <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> Resume Update </a>
+      <a href="#certification" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> Certifications </a>
+      <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> Experiences </a>
+      <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> Projects </a>
+      <a href="#Testominalsss" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> Testimonials </a>
+      <a href="#activities" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> Activities </a>
+
+      <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i> LogOut </a>
+
+
+    </div>
+
+  </nav>
+
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="#"><img src="images/zaheersha.jpeg" style="width:65px;"
+          class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1><b>My Portfolio Edting</b></h1>
+
+      </div>
+    </header>
+
+
+
+
+    <!-- Abstract -->
+    <div class="w3-container w3-padding-large w3-grey">
+      <div id="abstract"></div>
+
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="https://logodix.com/logo/70386.jpg" alt="Norway"
+            style="max-width: 100%; height: 100%; width: 363px; height: 300px;" class="w3-hover-opacity">
+          <form action="act.php" method="post">
+            <div class="w3-container w3-white">
+              <h2><b>Abstract Upload</b></h2>
+              <textarea name="ab[]" rows="5" cols="40" style="width: 100%;"
+                placeholder="Enter your abstract here"></textarea><br>
+              <input type="submit" value="Upload"> <br>
+            </div>
+          </form>
+        </div>
+        <div id="resume"></div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img
+            src="https://media.istockphoto.com/photos/resume-writing-concept-picture-id650865760?k=6&m=650865760&s=612x612&w=0&h=lWgZT75h2RDdHIkQaj1W21Qf4Sgwp4D7XtRX0VnPpaE="
+            alt="Norway" style="max-width: 100%; height: 100%; width: 363px; height: 300px;" class="w3-hover-opacity">
+          <form action="action.php" method="post">
+            <div class="w3-container w3-white">
+
+              <h2> <b>Resume Link Upload </b></h2>
+              <textarea name="re[]" rows="5" cols="40" style="width: 100%;"
+                placeholder="Enter your resume link here"></textarea><br>
+
+              <input type="submit" value="submit"> <br>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="https://www.reviewgeek.com/p/uploads/2020/05/e865dde8.jpg" alt="Norway"
+          style="max-width: 100%; height: 100%; width: 363px; height: 300px;" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h1><b>Projects</b></h1>
+          <div id="projects"></div>
+
+          <h2>Image Upload</h2>
+          <form action="p.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="im" placeholder="image url"> <br>
+            <h2>Tittle</h2>
+            <input type="text" id="tittle" placeholder="Tittle" name="ti"><br>
+            <h2>Abstract Upload</h2>
+            <textarea name="abbb" rows="5" cols="40" placeholder="Enter your abstract here" style="width: 100%;"
+              class="w3-hover-opacity"></textarea>
+              <h2>Source Code </h2>
+              <input type="text" id="src" placeholder="Source code link" name="s"><br><br>
+
+            <input type="submit" value="Upload"> <br>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img
+          src="https://primekbsinstitute.org/wp-content/uploads/2018/09/certificate_certification_by_svetazi_gettyimages-655331082_2400x1600-100788475-large.jpg"
+          alt="Norway" style="max-width: 100%; height: 100%; width: 363px; height: 300px;" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h1><b>Certifications </b></h1>
+          <div id="certification"></div>
+
+          <h2>Image Upload</h2>
+          <form action="c.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="ima" placeholder="image url"> <br>
+            <h2>Tittle</h2>
+            <input type="text" id="tittle" placeholder="Tittle" name="tit"> <br>
+            <h2>Abstract Upload</h2>
+            <textarea name="abb" rows="5" cols="40" placeholder="Enter your abstract here" style="width: 100%;"
+              class="w3-hover-opacity"></textarea><br>
+
+            <input type="submit" value="Upload"> <br>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="w3-third w3-container">
+        <img src="https://assets.6sigma.us/wp-content/uploads/2017/03/mobile-experience.jpg?x88889" alt="Norway"
+          style="max-width: 100%; height: 100%; width: 363px; height: 300px;" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h1><b>Experiences</b></h1>
+          <div id="experience"></div>
+
+          <h2>Image Upload</h2>
+          <form action="e.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="imag" placeholder="image url"><br>
+            <h2>Tittle</h2>
+            <input type="text" id="tittle" placeholder="Tittle" name="titt"> <br>
+            <h2>Abstract Upload</h2>
+            <textarea name="abd" rows="5" cols="40" placeholder="Enter your abstract here" style="width: 100%;"
+              class="w3-hover-opacity"></textarea><br>
+
+            <input type="submit" value="Upload"> <br>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+
+
+
+
+    <div class="w3-container w3-padding-large w3-grey">
+      <div id="activities"></div>
+
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img
+            src="https://blog.eventzilla.net/wp-content/uploads/2020/04/42192563-C22C-43A1-AC65-01644CBD8170_4_5005_c.jpeg"
+            alt="Norway" style="max-width: 100%; height: 100%; width: 363px; height: 300px;" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <h1><b>CO-CURRICULAR ACTIVITIES</b></h1>
+
+            <h2>Image Upload</h2>
+            <form action="a.php" method="post" enctype="multipart/form-data">
+              <input type="text" name="imaa" placeholder="image url"> <br>
+              <h2>Tittle</h2>
+              <input type="text" id="tittle" placeholder="Tittle" name="titt"> <br>
+              <h2>Abstract Upload</h2>
+              <textarea name="abstract" id="abstract" rows="5" cols="40" placeholder="Enter your abstract here" style="width: 100%;"
+                class="w3-hover-opacity"></textarea><br>
+  
+              <input type="submit" value="Upload"> <br>
+            </form>
+          </div>
+        </div>
+
+
+
+
+       
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
